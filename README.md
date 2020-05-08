@@ -4,7 +4,7 @@ A Covid-19 Safety Measurement App. [Ongoing]
 
 ### Glimpse
 
-<img src="/SS/1.png" height=""550px" width="250px">
+![Homepage](/SS/1.png)
 
 
 ![Sidebar](/SS/2.png)
