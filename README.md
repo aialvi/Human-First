@@ -4,10 +4,7 @@ A Covid-19 Safety Measurement App. [Ongoing]
 
 ### Glimpse
 
-![Homepage](/SS/1.png)
-
-
-![Sidebar](/SS/2.png)
+![Homepage](/SS/1.png)   ![Sidebar](/SS/2.png)
 
 
 ## Getting Started
