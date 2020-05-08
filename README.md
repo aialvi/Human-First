@@ -4,11 +4,11 @@ A Covid-19 Safety Measurement App. [Ongoing]
 
 ### Glimpse
 
-![Homepage](/SS/1.png)
-Format: ![Home](#)
+<img src="/SS/1.png" height=""550px" width="250px">
+
 
 ![Sidebar](/SS/2.png)
-Format: ![Sidebar](#)
+
 
 ## Getting Started
 
