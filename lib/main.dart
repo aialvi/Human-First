@@ -1,86 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'griddashboard.dart';
-void main() => runApp(MaterialApp(home: Home()));
+import 'package:humanfirst/screens/checklist_screen.dart';
+import 'package:humanfirst/screens/fooditem_screen.dart';
+import 'package:humanfirst/screens/home_screen.dart';
 
-class Home extends StatefulWidget {
-  @override
-  HomeState createState() => new HomeState();
-}
-
-class HomeState extends State<Home> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Color(0xff392850),
-
-      appBar: AppBar(
-        title: Text('Human First'),
-        backgroundColor: Color(0xff392850),
-      ),
+void main() => runApp(MaterialApp(
+    debugShowCheckedModeBanner: false,
+    home: HomeScreen(),
+    routes: {
+      '/checklist' : (context) => ChecklistScreen(),
+      '/fooditem' : (context) => FoodItemScreen(),
+    },
+));
 
 
-
-      body:
-
-      Column(
-        children: <Widget>[
-          SizedBox(
-            height: 12,
-          ),
-          Padding(
-            padding: EdgeInsets.only(left: 16, right: 16,),
-          ),
-
-          GridDashboard()
-        ],
-      ),
-
-      drawer: Drawer(
-        child: ListView(
-          padding: EdgeInsets.zero,
-          children: <Widget>[
-            DrawerHeader(
-              decoration: BoxDecoration(
-                color: Color(0xff392850),
-              ),
-              child:
-              Text(
-                'John Doe',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 24,
-                ),
-              ),
-
-            ),
-            ListTile(
-              leading: Icon(Icons.account_circle),
-              title: Text('Profile'),
-            ),
-            ListTile(
-              leading: Icon(Icons.event_available),
-              title: Text('Checklist'),
-            ),
-            ListTile(
-              leading: Icon(Icons.healing),
-              title: Text('Ask for Help'),
-            ),
-            ListTile(
-              leading: Icon(Icons.add_box),
-              title: Text('Health Tips'),
-            ),
-            ListTile(
-              leading: Icon(Icons.call),
-              title: Text('Helpline'),
-            ),
-            ListTile(
-              leading: Icon(Icons.adjust),
-              title: Text('Logout'),
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-}
