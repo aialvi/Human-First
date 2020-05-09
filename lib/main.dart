@@ -3,13 +3,13 @@ import 'package:humanfirst/screens/checklist_screen.dart';
 import 'package:humanfirst/screens/fooditem_screen.dart';
 import 'package:humanfirst/screens/helpcenters_screen.dart';
 import 'package:humanfirst/screens/askforhelp_screen.dart';
+import 'package:humanfirst/screens/home_screen.dart';
 import 'package:humanfirst/screens/settings_screen.dart';
 import 'package:humanfirst/screens/statistics_screen.dart';
-import 'package:humanfirst/authenticate/login_screen.dart';
 
 void main() => runApp(MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: LogInPage(),
+      home: HomeScreen(),
       routes: {
         '/checklist': (context) => ChecklistScreen(),
         '/fooditem': (context) => FoodItemScreen(),
