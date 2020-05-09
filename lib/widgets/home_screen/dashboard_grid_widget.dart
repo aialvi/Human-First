@@ -46,7 +46,7 @@ class DashboardGridWidget extends StatelessWidget {
             style: GoogleFonts.openSans(
                 textStyle: TextStyle(
                     color: Colors.white38,
-                    fontSize: 10,
+                    fontSize: 11,
                     fontWeight: FontWeight.w600)),
           ),
           SizedBox(

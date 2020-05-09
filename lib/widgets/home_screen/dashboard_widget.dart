@@ -22,9 +22,9 @@ class DashboardWidget extends StatelessWidget {
       subtitle: "Places to go for help",
       image: "assets/map.png",
     );
-    DashboardGridItem healthCenterItem = new DashboardGridItem(
-      title: "Health Centers",
-      subtitle: "Nearest Healthcare centers",
+    DashboardGridItem askForHelpItem = new DashboardGridItem(
+      title: "Ask for Help",
+      subtitle: "For any kind of need",
       image: "assets/hospital.png",
     );
     DashboardGridItem statisticsItem = new DashboardGridItem(
@@ -68,25 +68,48 @@ class DashboardWidget extends StatelessWidget {
                 image: foodItem.image,
               ),
             ),
-            DashboardGridWidget(
-              color: color,
-              title: helpCenterItem.title,
-              subtitle: helpCenterItem.subtitle,
-              image: helpCenterItem.image,
+            GestureDetector(
+              onTap: (){
+                Navigator.pushNamed(context, '/helpcenteritem');
+              },
+              child: DashboardGridWidget(
+                color: color,
+                title: helpCenterItem.title,
+                subtitle: helpCenterItem.subtitle,
+                image: helpCenterItem.image,
+              ),
             ),
-            DashboardGridWidget(
-              color: color,
-              title: healthCenterItem.title,
-              subtitle: healthCenterItem.subtitle,
-              image: healthCenterItem.image,
-            ),
-            DashboardGridWidget(
+
+              GestureDetector(
+              onTap: (){
+              Navigator.pushNamed(context, '/askforhelpitem');
+              },
+              child: DashboardGridWidget(
+                color: color,
+                title: askForHelpItem.title,
+                subtitle: askForHelpItem.subtitle,
+                image: askForHelpItem.image,
+                ),
+              ),
+
+
+
+            GestureDetector(
+            onTap: (){
+            Navigator.pushNamed(context, '/statisticsitem');
+            },
+            child: DashboardGridWidget(
               color: color,
               title: statisticsItem.title,
               subtitle: statisticsItem.subtitle,
               image: statisticsItem.image,
             ),
+            ),
+
             GestureDetector(
+              onTap: (){
+                Navigator.pushNamed(context, '/settingsitem');
+              },
               child: DashboardGridWidget(
                 color: color,
                 title: settingsItem.title,

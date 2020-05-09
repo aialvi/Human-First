@@ -41,6 +41,7 @@ class HomeScreenState extends State<HomeScreen> {
               ),
               child: Text(
                 'John Doe',
+                textAlign: TextAlign.center,
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 24,
