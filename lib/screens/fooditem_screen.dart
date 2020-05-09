@@ -13,6 +13,11 @@ class _FoodItemScreenState extends State<FoodItemScreen> {
         title: Text('Ask for Food'),
         backgroundColor: Color(0xff392850),
       ),
+      body: Container(
+        child: Center(
+          child: Text('Food'),
+        ),
+      ),
     );
   }
 }
