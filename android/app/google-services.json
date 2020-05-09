@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "296234649105",
+    "firebase_url": "https://human-first-tm.firebaseio.com",
+    "project_id": "human-first-tm",
+    "storage_bucket": "human-first-tm.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:296234649105:android:7933031de6cd32722713b0",
+        "android_client_info": {
+          "package_name": "com.triamatter.humanfirst"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "296234649105-s3vjvedps5v40momogeg20g9f7q3mrs5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.triamatter.humanfirst",
+            "certificate_hash": "760c525b90287570617c07e6630aa6c3e6b0a331"
+          }
+        },
+        {
+          "client_id": "296234649105-c4agg0somv0i6b91b84rkm5ge5pb3vfc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAojoDeqbUUhBjE3O9_LIjMm8OkAk1T7no"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "296234649105-c4agg0somv0i6b91b84rkm5ge5pb3vfc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

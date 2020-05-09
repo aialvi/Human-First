@@ -8,19 +8,14 @@ import 'package:humanfirst/screens/statistics_screen.dart';
 import 'package:humanfirst/authenticate/login_screen.dart';
 
 void main() => runApp(MaterialApp(
-    debugShowCheckedModeBanner: false,
-    home: LogInPage(),
-    routes: {
-      '/checklist' : (context) => ChecklistScreen(),
-      '/fooditem' : (context) => FoodItemScreen(),
-      '/helpcenteritem' : (context) => HelpCenterScreen(),
-      '/askforhelpitem' : (context) => AskForHelpScreen(),
-      '/statisticsitem' : (context) => StatisticsScreen(),
-      '/settingsitem' : (context) => SettingsScreen(),
-
-
-
-    },
-));
-
-
+      debugShowCheckedModeBanner: false,
+      home: LogInPage(),
+      routes: {
+        '/checklist': (context) => ChecklistScreen(),
+        '/fooditem': (context) => FoodItemScreen(),
+        '/helpcenteritem': (context) => HelpCenterScreen(),
+        '/askforhelpitem': (context) => AskForHelpScreen(),
+        '/statisticsitem': (context) => StatisticsScreen(),
+        '/settingsitem': (context) => SettingsScreen(),
+      },
+    ));
