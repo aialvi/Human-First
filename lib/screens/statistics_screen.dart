@@ -39,7 +39,7 @@ class _StatisticsScreenState extends State<StatisticsScreen> {
               spacing: 20,
               children: <Widget>[
                 InfoCard(
-                  title: "Confirmed Cases",
+                  title: "Total Cases",
                   iconColor: Color(0xFFFF8C00),
                   effectedNum: 1062,
                   press: () {},
@@ -76,11 +76,11 @@ class _StatisticsScreenState extends State<StatisticsScreen> {
           ),
           SizedBox(height: 20),
           Padding(
-            padding: EdgeInsets.symmetric(horizontal: 20),
+            padding: EdgeInsets.symmetric(horizontal: 10),
             child: Column(
               children: <Widget>[
                 Container(
-                  padding: EdgeInsets.symmetric(horizontal: 20, vertical: 25),
+                  padding: EdgeInsets.symmetric(horizontal: 10, vertical: 25),
                   decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(20),

@@ -12,7 +12,7 @@ import 'package:humanfirst/screens/statistics_screen.dart';
 
 void main() => runApp(MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: '/statisticsitem',
+      initialRoute: '/login',
       theme: ThemeData(
         textTheme: GoogleFonts.poppinsTextTheme(),
         backgroundColor: Colors.white

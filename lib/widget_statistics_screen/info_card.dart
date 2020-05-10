@@ -37,8 +37,8 @@ class InfoCard extends StatelessWidget {
                     children: <Widget>[
                       Container(
                         alignment: Alignment.center,
-                        height: 30,
-                        width: 30,
+                        height: 20,
+                        width: 20,
                         decoration: BoxDecoration(
                           color: iconColor.withOpacity(0.12),
                           shape: BoxShape.circle,
