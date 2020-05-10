@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:humanfirst/models/meta/checklist_options_item_model.dart';
+import 'package:grouped_checkbox/grouped_checkbox.dart';
 
 class ChecklistScreen extends StatefulWidget {
   @override
@@ -15,7 +17,21 @@ class _ChecklistScreenState extends State<ChecklistScreen> {
         backgroundColor: Color(0xff392850),
       ),
         body: Center(
-          child: Text('Checklist Body'),
+          child: GroupedCheckbox(
+              itemList: allItemList,
+              checkedItemList: checkedItemList,
+              disabled: ['Black'],
+              onChanged: (itemList) {
+                setState(() {
+                  selectedItemList = itemList;
+                  print('SELECTED ITEM LIST $itemList');
+                });
+              },
+              orientation: CheckboxOrientation.VERTICAL,
+              checkColor: Colors.blue,
+              activeColor: Colors.red
+          ),
+
         ),
     );
   }
