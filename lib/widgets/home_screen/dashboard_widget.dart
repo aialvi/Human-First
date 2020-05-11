@@ -37,7 +37,7 @@ class DashboardWidget extends StatelessWidget {
       subtitle: "Update Profile & etc.",
       image: "assets/setting.png",
     );
-    var color = 0xff453658;
+    var color = 0xeeeeeeee;
     return Flexible(
         child: GridView.count(
           childAspectRatio: 1.0,

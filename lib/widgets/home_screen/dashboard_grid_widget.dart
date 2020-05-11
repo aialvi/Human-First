@@ -34,7 +34,7 @@ class DashboardGridWidget extends StatelessWidget {
             title,
             style: GoogleFonts.openSans(
                 textStyle: TextStyle(
-                    color: Colors.white,
+                    color: Colors.grey[600],
                     fontSize: 16,
                     fontWeight: FontWeight.w600)),
           ),
@@ -45,7 +45,7 @@ class DashboardGridWidget extends StatelessWidget {
             subtitle,
             style: GoogleFonts.openSans(
                 textStyle: TextStyle(
-                    color: Colors.white38,
+                    color: Colors.grey,
                     fontSize: 11,
                     fontWeight: FontWeight.w600)),
           ),

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:humanfirst/constants.dart';
-import 'package:humanfirst/screens/home_screen.dart';
 import 'package:humanfirst/widget_statistics_screen/info_card.dart';
 import 'package:humanfirst/widget_statistics_screen/weekly_chart.dart';
 
@@ -60,21 +59,12 @@ class _StatisticsScreenState extends State<StatisticsScreen> {
                   title: "New Cases",
                   iconColor: Color(0xFF5856D6),
                   effectedNum: 75,
-                  press: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) {
-                          return HomeScreen();
-                        },
-                      ),
-                    );
-                  },
+                  press: () {},
                 ),
               ],
             ),
           ),
-          SizedBox(height: 20),
+//          SizedBox(height: 20),
           Padding(
             padding: EdgeInsets.symmetric(horizontal: 10),
             child: Column(
@@ -140,24 +130,24 @@ class _StatisticsScreenState extends State<StatisticsScreen> {
                       ),
                     ],
                   ),
-                  child: Column(
-                    children: <Widget>[
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: <Widget>[
-                          Text(
-                            "Global Map",
-                            style: TextStyle(
-                              fontSize: 15,
-                            ),
-                          ),
-                          Image.asset("assets/icons/more.svg")
-                        ],
-                      ),
-//                      SizedBox(height: 10),
-                      Image.asset("assets/icons/map.svg"),
-                    ],
-                  ),
+//                  child: Column(
+//                    children: <Widget>[
+//                      Row(
+//                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+//                        children: <Widget>[
+//                          Text(
+//                            "Global Map",
+//                            style: TextStyle(
+//                              fontSize: 15,
+//                            ),
+//                          ),
+////                          Image.asset("assets/icons/more.svg")
+//                        ],
+//                      ),
+////                      SizedBox(height: 10),
+////                      Image.asset("assets/icons/map.svg"),
+//                    ],
+//                  ),
                 ),
               ],
             ),
@@ -229,7 +219,7 @@ Row buildCaseNumber(BuildContext context) {
         "5.9% ",
         style: TextStyle(color: kPrimaryColor),
       ),
-      Image.asset("assets/icons/increase.svg")
+//      Image.asset("assets/icons/increase.svg")
     ],
   );
 }
@@ -246,7 +236,7 @@ Row buildTitleWithMoreIcon() {
           fontSize: 15,
         ),
       ),
-      Image.asset("assets/icons/more.svg")
+//      Image.asset("assets/icons/more.svg")
     ],
   );
 }

@@ -16,11 +16,14 @@ class _ChecklistScreenState extends State<ChecklistScreen> {
         title: Text('Checklist'),
         backgroundColor: Color(0xff392850),
       ),
-        body: Center(
-          child: GroupedCheckbox(
+        body: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+
+          GroupedCheckbox(
               itemList: allItemList,
               checkedItemList: checkedItemList,
-              disabled: ['Black'],
+//              disabled: ['Black'],
               onChanged: (itemList) {
                 setState(() {
                   selectedItemList = itemList;
@@ -30,9 +33,24 @@ class _ChecklistScreenState extends State<ChecklistScreen> {
               orientation: CheckboxOrientation.VERTICAL,
               checkColor: Colors.blue,
               activeColor: Colors.red
+
           ),
 
-        ),
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical: 16.0, horizontal: 16.0),
+                child: Center(
+                  child: RaisedButton(
+                    onPressed: () {
+                      // Validate will return true if the form is valid, or false if
+                      // the form is invalid.
+
+                    },
+                    child: Text('Submit'),
+                  ),
+                ),
+              ),
+        ],
+    ),
     );
   }
 }
