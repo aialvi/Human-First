@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:humanfirst/constants.dart';
-import 'package:humanfirst/widget_statistics_screen/info_card.dart';
-import 'package:humanfirst/widget_statistics_screen/weekly_chart.dart';
+import 'package:humanfirst/widgets/statistics_screen/info_card_widget.dart';
+import 'package:humanfirst/widgets/statistics_screen/weekly_chart_widget.dart';
 
 class StatisticsScreen extends StatefulWidget {
   @override

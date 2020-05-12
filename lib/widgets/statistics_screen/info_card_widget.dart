@@ -1,5 +1,5 @@
 import 'package:humanfirst/constants.dart';
-import 'package:humanfirst/widget_statistics_screen/line_chart.dart';
+import 'package:humanfirst/widgets/statistics_screen/line_chart_widget.dart';
 import 'package:flutter/material.dart';
 
 
