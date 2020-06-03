@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:humanfirst/models/meta/helpcenters_item_model.dart';
 
 class HelpCenterScreen extends StatefulWidget {
   @override
@@ -14,10 +15,22 @@ class _HelpCenterScreenState extends State<HelpCenterScreen> {
         title: Text('Help Centers'),
         backgroundColor: Color(0xff392850),
       ),
-      body: Center(
-        child: Text('List of Help centers',
+      body:
+
+      Center(
+        child: Padding(
+          padding: const EdgeInsets.all(16.0),
+
+          child: new ListView.builder
+            (
+              itemCount: helpcenters.length,
+              itemBuilder: (BuildContext ctxt, int index) {
+                return new Text(helpcenters[index]);
+              }
+          ),
+        ),
     ),
-      ),
-    );
+      );
+
   }
 }
